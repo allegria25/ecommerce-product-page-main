@@ -1,0 +1,414 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+body{
+    margin: 0;
+    padding: 0px;
+}
+
+.barnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;  
+    width:80% ;
+    margin: 0 auto;
+    border-bottom:0.2px solid rgb(238, 230, 230);
+    padding-bottom: 20px;
+  
+}
+
+
+
+nav{
+    list-style: none;
+    display: flex;
+    margin-right: 300px;
+    
+}
+
+li{
+    padding: 15px;
+    font-size: 14px;
+    color: rgb(61, 58, 58);
+    font-weight: 200px;
+    cursor: pointer;
+    cursor: pointer;
+    
+}
+
+.navdroit{
+    display: flex;
+    justify-content: space-between;
+   
+}
+ .profil{
+    width: 40px;
+    border-color:#d56303;
+    border-image: none;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 10;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.pannier{
+    height: 20px;
+    margin-top: 12px;
+    padding-right: 25px;
+    cursor: pointer;
+    
+}
+
+.barnav .titre{
+    font-size: 30px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: rgb(68, 60, 60);
+
+}
+ .barnav .menu{
+    display: none;
+   
+ }
+
+
+/**la page de présentation des produits**/
+.presentation{
+    display: flex;
+    width: 1000px;
+    margin: 0px auto;
+    padding-top: 60px;
+    justify-content: space-between;
+
+    
+}
+
+.mes_images {
+    width: 400px;
+    
+}
+.image_principale img{
+    width: 350px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+}
+.image_bloc {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.image_bloc .bloc1{
+    width: 60px;
+    border-radius: 5%;
+    margin-left: 18px;
+    border-radius: 3%;
+    border-color:white;
+    border-style: solid;
+    transition: filter 0.5s, border-style 0.5s,border-color 0.5s;
+
+}
+
+.image_bloc .bloc1:hover{
+   
+    border-color: #d56303;
+    border-style: solid;
+    filter: opacity(50%);
+
+}
+
+.detail{
+    margin-right: 120px;
+    margin-top: 50px;
+    
+
+   
+   
+}
+
+.detail h3{
+    font-size: 12px;
+    color: #d56303;
+}
+
+.detail .gros_mot{
+    font-size: 35px;
+    margin-top: 15px;
+
+}
+.detail h5{
+    font-size: 15px;
+    margin-top: 20px;
+    color: rgb(173, 171, 171);
+}
+
+.prix{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+    
+    
+}
+
+.prix .gros_prix{
+    font-size: 25px;
+    color: rgb(68, 60, 60);
+    font-weight: bold;
+   
+}
+
+.prix .petit_prix{
+    margin-right: 170px;
+    background-color: #f7ede5;
+    border-radius: 5%;
+    width: 40px;
+    text-align: center;
+    color: #d56303;
+
+}
+
+.all{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.detail .small_prix{
+    color: rgb(173, 171, 171);
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 350px;
+}
+
+.nombre {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+
+
+.plus{
+    padding-right: 20px;
+    cursor: pointer;
+    
+ 
+}
+
+.moins{
+    padding-left: 20px;
+    cursor: pointer;
+   
+}
+
+button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    background: #dd8b48;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background: #e1e5f0;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+button .text_button{
+    margin-left: 25px;
+    color: #ffffff;
+    font-weight: bold;
+    
+
+}
+
+
+
+@media screen and (max-width : 950px) and (min-width:515px) {
+  nav{
+        display: none;
+    }
+    .barnav{
+        border: none;
+        justify-content: space-between;
+        
+    }
+
+    .presentation{
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .mes_images{
+        display: flex;
+        margin-right: 100px;
+        align-items: center;
+        background-size: cover;
+    }
+
+    .image_principale img{
+        width: 330px;
+
+    }
+
+    .image_bloc{
+        flex-wrap: wrap;
+
+    }
+    .detail{
+        margin-left: 110px;
+        
+    }
+
+    .barnav .menu{
+        display: initial;
+        width: 20px;
+        cursor: pointer;
+        margin-left: 20px ;
+     }
+
+     .bloc-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     .barnav .titre{
+        padding-left: 10PX;
+        font-size: 25PX;
+        margin-bottom: 3px;
+     }
+ 
+ 
+    
+}
+
+
+@media screen and (max-width : 514px) and (min-width : 117px){
+    nav{
+        display: none;
+    }
+    .barnav{
+        border: none;
+        justify-content: space-between;
+        color: #d56303;
+    }
+
+    .presentation{
+        flex-direction: column;
+        width: 100%;
+        margin: 0 ;
+        align-items: center;
+        padding-top: none;
+    }
+
+   
+
+    .image_principale .mon_image{
+        border-radius: 0%;
+        margin-top: -50px;
+        width: 100%;
+        background-size: cover;
+        
+
+    }
+
+    .mes_images{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        
+
+    }
+
+    .image_bloc{
+        display: none;
+
+    }
+    .detail{
+        margin-left: 200px;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+    }
+
+    .all{
+        flex-direction: row;
+        display: flex;
+    
+        
+    }
+    .detail .small_prix{
+        display: none;
+        
+
+    }
+
+    .nombre{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 50px;
+    }
+    .col{
+        width: 80%;
+        margin-bottom: 10px;
+       
+
+    }
+
+    button{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .detail h5{
+        width: 80%;
+    }
+
+    .barnav .menu{
+        display: initial;
+        width: 20px;
+        cursor: pointer;
+        margin-left: 10px;
+     }
+
+     .bloc-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .barnav .titre{
+        padding-left: 10PX;
+        font-size: 20PX;
+        margin-bottom: 3px;
+     }
+
+
+}
